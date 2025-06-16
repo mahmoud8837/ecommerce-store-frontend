@@ -61,7 +61,7 @@ const router = createBrowserRouter(
         <Route path="dashboard" element={<AdminDashboard />} />
       </Route>
     </Route>
-  ), {basename: "/"}
+  ), {basename: "/ecommerce-store-frontend"}
 );
 
 createRoot(document.getElementById("root")).render(
