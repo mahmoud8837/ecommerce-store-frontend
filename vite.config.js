@@ -8,8 +8,8 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      "/api/": "https://e-commerce-store-backend-eta.vercel.app",
-      "/uploads/": "https://e-commerce-store-backend-eta.vercel.app",
+      "/api/": "https://localhost:5000",
+      "/uploads/": "https://localhost:5000",
     },
   },
 });
