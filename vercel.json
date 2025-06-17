@@ -1,8 +1,13 @@
 {  
   "rewrites": [
-       { "source": "/api/(.*)",
-         "destination": "/api/index.js*"
-       } 
+        {
+      "source": ":path*/api/",
+      "destination": "https://e-commerce-store-backend-eta.vercel.app/:path*"
+    },
+        {
+      "source": "/uploads/:path*",
+      "destination": "https://e-commerce-store-backend-eta.vercel.app/:path*"
+    },
        { "source": "/uploads/(.*)",
          "destination": "/uploads/index.js*"
        } 
