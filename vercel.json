@@ -1,11 +1,11 @@
 {  
   "rewrites": [
         {
-      "source": "/api/:path*",
+      "source": ":path*/api/",
       "destination": "https://e-commerce-store-backend-eta.vercel.app/:path*"
     },
         {
-      "source": "/uploads/:path*",
+      "source": ":path*/uploads/",
       "destination": "https://e-commerce-store-backend-eta.vercel.app/:path*"
     },
        {
