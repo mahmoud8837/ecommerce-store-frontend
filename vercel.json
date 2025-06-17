@@ -8,8 +8,9 @@
       "source": "/uploads/:path*",
       "destination": "https://e-commerce-store-backend-eta.vercel.app/:path*"
     },
-       { "source": "/uploads/(.*)",
-         "destination": "/uploads/index.js*"
-       } 
+       {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
  ]
 }
