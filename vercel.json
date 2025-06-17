@@ -1,5 +1,5 @@
 {  
-  "rewrites": [
+  "routes": [
         {
       "source": "/api/:path*",
       "destination": "https://e-commerce-store-backend-eta.vercel.app/:path*"
