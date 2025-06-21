@@ -1,0 +1,38 @@
+#navigation-container {
+  width: 5%;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden; /*Hide overflowing content during transition*/
+  .favourites-count {
+    display: none;
+  }
+  &:hover {
+    width: 17%;
+    .username {
+      font-size: 16px;
+      transition: 0.3s;
+      transform: translateX(8px);
+      color: white;
+      &:hover {
+        background-color: rgba(46, 46, 46, 0.224);
+      }
+      .arrow {
+        display: block;
+      }
+    }
+    .favourites-count {
+      display: block;
+    }
+  }
+}
+
+/* Initially hide nav-item-name */
+.nav-item-name {
+  display: none;
+  transition: opacity 0.2s ease-in-out; /* Add opacity transition */
+  
+}
+
+#navigation-container:hover .nav-item-name {
+  display: block;
+  opacity: 1;
+}
