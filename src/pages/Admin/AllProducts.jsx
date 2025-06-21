@@ -5,6 +5,8 @@ import AdminMenu from "./AdminMenu";
 import { useEffect, useState } from "react";
 import moment from "moment";
 import { FaArrowRight } from "react-icons/fa6";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 
 const AllProducts = () => {
   const [page, setPage] = useState(1);
@@ -70,7 +72,7 @@ const AllProducts = () => {
               <div>
                 <div className="h-60 m-3 rounded-t-lg overflow-hidden flex items-center justify-center">
                   <img
-                    src={product.image.url}
+                    src={`${BACKEND_URL}${product.image.url}`}
                     alt={product.name}
                     className="w-full h-full object-cover duration-[.3s] rounded-lg rounded-b-none"
                   />
